@@ -6,10 +6,9 @@ const Layout = () => {
     setNavOpen(!navOpen)
   }
   return (
-    <div>
+    <div className="min-h-screen h-full bg-black">
       <Sidebar isOpen={navOpen} handleSidebarToggle={() => handleSidebarToggle()} />
       <Header handleSidebarToggle={() => handleSidebarToggle()} />
-
       <Footer />
     </div>
   )

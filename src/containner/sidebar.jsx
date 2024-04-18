@@ -19,7 +19,7 @@ function SideBar(props) {
     // checkMenuSideBar()
   }, [])
   useEffect(() => {}, [props.isOpen])
-  const Sidebar = `fixed  h-screen  bg-slate-100 w-[120px]  ease-in-out duration-300 md:duration-50 md:-translate-x-0 ${
+  const Sidebar = `fixed md:hidden h-screen  bg-slate-100 w-[120px]  ease-in-out duration-300 md:duration-50 md:-translate-x-0 ${
     props.isOpen ? "-translate-x-0" : " -translate-x-full"
   }`
   const drawer = (
@@ -50,7 +50,7 @@ function SideBar(props) {
     <div className={Sidebar}>
       {props.isOpen ? (
         <div
-          className="fixed inset-0  ml-[120px] w-screen flex items-center bg-black justify-center  bg-opacity-50"
+          className="fixed inset-0  ml-[120px] w-screen flex items-center bg-black justify-center  bg-opacity-50 "
           onClick={props.handleSidebarToggle}
         ></div>
       ) : (
