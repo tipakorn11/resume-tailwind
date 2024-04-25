@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <React.Suspense>
           <Switch>
-            {/* <Route exact path="/401" name="Page 401" render={(props) => <Page401 {...props} />} /> */}
+            <Route exact path="/401" name="Page 401" render={(props) => <Layout {...props} />} />
             <Route path="/" name="หน้าแรก" render={(props) => <Layout {...props} />} />
           </Switch>
         </React.Suspense>
