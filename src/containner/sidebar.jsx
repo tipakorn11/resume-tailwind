@@ -46,6 +46,8 @@ function SideBar(props) {
     </div>
   )
 
+
+  
   return (
     <div className={Sidebar}>
       {props.isOpen ? (
