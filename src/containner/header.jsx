@@ -22,8 +22,8 @@ function Header(props) {
           className=" text-white h-full pi pi-bars  px-5"
         />
       </div>
-      <div className="m-auto  *:cursor-pointer *:pl-4  hidden md:block text-slate-200 font-light ">
-        <label className="mx-auto">Home</label>
+      <div className="flex justify-around w-2/3 *:cursor-pointer *:pl-4  items-center  text-slate-200 font-light ">
+        <label >Home</label>
         <label>About</label>
         <label>Portfolio</label>
         <label>Contact</label>
